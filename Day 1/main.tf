@@ -8,10 +8,10 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-south-2" # replace this with the nearest region to you
+  region = "eu-west-3" # replace this with the nearest region to you
 }
 
-resource "aws_instance" "terraform-example" {
-    ami             = "ami-011899242bb902164" # machine image
+resource "aws_instance" "terraform" {
+    ami             = "ami-0f61de2873e29e866" # machine image
     instance_type   = "t2.micro" # instance configuration
 }
