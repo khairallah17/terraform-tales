@@ -26,6 +26,13 @@ Before getting started, make sure you have the following prerequisites set up:
     terraform init
     ```
     Terraform will show you a plan of the actions it will take. Type yes when prompted to confirm the creation of resources.
+- ### Step 4 : Launch EC2 instance
+    Launch the Terraform configuration to create the EC2 instance:
+    ```
+    terraform apply
+    ```
+    `it is important to choose the right ami with the right location, because there are some ami unavaible in some locations`.
+    Finally check your aws interface to check if the ec2 instance is really runing. 
 
 ## Cleanup
 To avoid incurring unnecessary costs, remember to clean up the resources after you're done with this tutorial:
